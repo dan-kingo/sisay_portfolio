@@ -57,3 +57,6 @@ form.addEventListener("submit", function (e) {
       }, 3000);
     });
 });
+
+// JavaScript to toggle navigation menu
+// JavaScript to toggle sidebar

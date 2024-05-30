@@ -492,3 +492,6 @@ nav ul li a.active::after {
 #result {
   padding: 8px;
 }
+.nav-toggle {
+  display: none;
+}
