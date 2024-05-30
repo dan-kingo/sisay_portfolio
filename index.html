@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div id="header">
@@ -25,8 +26,33 @@
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
+        <div class="container">
+          <div id="hero" data-aos="fade-down" dat-aos-duration=" 500">
+            <img src="images/sis-dire-office.jpg" alt="" />
+            <div class="right">
+              <p>Hello I'm</p>
+              <h3>Sisay Negash</h3>
+              <h4>Both Software and ML Engineer</h4>
+              <div class="cta">
+                <a
+                  class="button1"
+                  href="assets/sisay-cv.pdf"
+                  download="sisay-cv.pdf"
+                  target="_blank"
+                >
+                  Download CV
+                </a>
+                <button class="button2">Contact Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
