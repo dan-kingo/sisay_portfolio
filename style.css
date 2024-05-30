@@ -121,9 +121,10 @@ nav ul li a.active::after {
   display: flex;
   gap: 20px;
 }
-.right .cta .button2 {
+.cta .button2 {
   border: 0;
   padding: 10px 20px;
+  text-decoration: none;
   border-radius: 6px;
   cursor: pointer;
   background: rgb(255, 112, 112);
@@ -139,7 +140,8 @@ nav ul li a.active::after {
 .cta .button2:hover {
   transform: scale(1.05);
 }
-.cta .button1 {
+.cta .button1,
+.show-more {
   text-decoration: none;
   border: 0;
   font-size: 18px;
@@ -151,7 +153,8 @@ nav ul li a.active::after {
   border: 1px solid #fff;
   transition: all 0.5s ease-in-out;
 }
-.cta .button1:hover {
+.cta .button1:hover,
+.show-more:hover {
   background-color: #fff;
   color: #121321;
   border: 0;
@@ -203,7 +206,8 @@ nav ul li a.active::after {
 }
 
 #about h1,
-#services h1 {
+#services h1,
+#portfolio h1 {
   background: linear-gradient(
     67deg,
     rgba(255, 112, 112, 1),
@@ -283,14 +287,16 @@ nav ul li a.active::after {
 
 /* services section */
 
-#services {
+#services,
+#portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 100px;
 }
-#services h1 {
+#services h1,
+#portfolio h1 {
   margin: 50px 0;
 }
 
@@ -309,7 +315,7 @@ nav ul li a.active::after {
   border-radius: 12px;
   cursor: pointer;
   display: flex;
-  gap: 16px;
+  gap: 10px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -330,4 +336,49 @@ nav ul li a.active::after {
   border: 0;
   background: linear-gradient(-67deg, #e06daa, #121321);
   transform: scale(1.05);
+}
+
+/* portfolio section */
+
+.project img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.project h3 {
+  background: linear-gradient(
+    67deg,
+    rgba(255, 112, 112, 1),
+    rgba(231, 35, 141, 1)
+  );
+  background-clip: text;
+  color: transparent;
+  margin-block: 1rem;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+}
+
+.project {
+  border-radius: 12px;
+  margin: 24px 0;
+  border: 1px solid #fff;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.show-more {
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 36px;
 }
