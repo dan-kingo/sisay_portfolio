@@ -593,7 +593,7 @@ nav ul li a.active::after {
   }
 }
 
-@media (max-width: 512px) {
+@media (max-width: 480px) {
   .services-container {
     display: grid;
     grid-template-columns: repeat(1, auto);

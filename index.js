@@ -67,3 +67,6 @@ document.querySelector(".nav-toggle").onclick = function () {
 document.querySelector(".nav-close").onclick = function () {
   document.querySelector(".nav-menu").style.right = "-300px";
 };
+
+year = new Date().getFullYear();
+document.getElementById("day").innerHTML = year;
