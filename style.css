@@ -202,7 +202,8 @@ nav ul li a.active::after {
   z-index: 0;
 }
 
-#about h1 {
+#about h1,
+#services h1 {
   background: linear-gradient(
     67deg,
     rgba(255, 112, 112, 1),
@@ -277,5 +278,56 @@ nav ul li a.active::after {
 }
 
 .achievement:hover {
+  transform: scale(1.05);
+}
+
+/* services section */
+
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+#services h1 {
+  margin: 50px 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+}
+
+.service {
+  border: 1px solid #fff;
+  padding: 2rem 16px;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-direction: column;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  transition: all 0.5s ease-in-out;
+}
+
+.service h2 {
+  background: linear-gradient(
+    67deg,
+    rgba(255, 112, 112, 1),
+    rgba(231, 35, 141, 1)
+  );
+  background-clip: text;
+  color: transparent;
+}
+.service p {
+  opacity: 0.9;
+  text-align: justify;
+}
+.service:hover {
+  border: 0;
+  background: linear-gradient(-67deg, #e06daa, #121321);
   transform: scale(1.05);
 }
