@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -169,7 +173,13 @@
       </div>
     </div>
 
-    <div class="container" id="portfolio">
+    <!-- project section -->
+    <div
+      class="container"
+      id="portfolio"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
       <h1>My Projects</h1>
       <div class="projects-container">
         <div class="project">
@@ -210,10 +220,74 @@
       </div>
       <a href="" class="show-more">Show More</a>
     </div>
+
+    <div class="container" id="contact">
+      <div class="contact-left" data-aos="fade-right" data-aos-duration="3000">
+        <h1>Contact Me</h1>
+        <p class="text">
+          I am a versatile web developer skilled in crafting intuitive,
+          responsive websites using technologies. I excel in developing advanced
+          models for data analysis.
+        </p>
+        <p><i class="bx bx-envelope"></i> ctrlsoft@gmail.com</p>
+        <p><i class="bx bx-phone"></i> +251 927-640-751</p>
+        <div class="links">
+          <a href="#"><i class="bx bx-paper-plane"></i></a>
+          <a href="#"> <i class="bx bxl-instagram"></i></a>
+          <a href="#"> <i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <a
+          class="cv-download"
+          href="assets/sisay-cv.pdf"
+          download="sisay-cv.pdf"
+          target="_blank"
+        >
+          Download CV
+        </a>
+      </div>
+      <div class="contact-right" data-aos="fade-left" data-aos-duration="3000">
+        <form action="" method="post" id="form">
+          <input
+            type="hidden"
+            name="access_key"
+            value="1aab92dc-a0b9-4043-a390-b72203d93691"
+          />
+          <label for="name">Your Name:</label><br />
+          <input
+            type="text"
+            placeholder="your name"
+            id="name"
+            required
+            name="name"
+          /><br />
+          <label for="email">Your Email:</label><br />
+          <input
+            type="email"
+            placeholder="your email"
+            id="email"
+            name="email"
+            required
+          /><br />
+          <label for="message">Your Message:</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+          <button class="cv">Submit</button>
+          <div id="result"></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-section">
+        <p>Copyright &copy; <span>2024</span> Allrights Reserved!</p>
+      </div>
+    </div>
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
