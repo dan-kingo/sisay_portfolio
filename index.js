@@ -60,3 +60,10 @@ form.addEventListener("submit", function (e) {
 
 // JavaScript to toggle navigation menu
 // JavaScript to toggle sidebar
+
+document.querySelector(".nav-toggle").onclick = function () {
+  document.querySelector(".nav-menu").style.right = "0";
+};
+document.querySelector(".nav-close").onclick = function () {
+  document.querySelector(".nav-menu").style.right = "-300px";
+};
