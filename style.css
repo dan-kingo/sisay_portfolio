@@ -336,7 +336,7 @@ nav ul li a.active::after {
 }
 .service p {
   opacity: 0.9;
-  text-align: justify;
+  line-height: 28px;
 }
 .service:hover {
   border: 0;
@@ -494,6 +494,8 @@ nav ul li a.active::after {
 }
 .nav-toggle {
   display: none;
+  font-size: 36px;
+  color: #ee0181;
   cursor: pointer;
 }
 .nav-close {
@@ -503,6 +505,9 @@ nav ul li a.active::after {
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+  }
+  nav {
+    padding: 10px 2%;
   }
   .nav-menu {
     position: fixed;
@@ -519,11 +524,84 @@ nav ul li a.active::after {
     right: -300px;
   }
   .nav-close {
-    font-size: 20px;
+    font-size: 36px;
+    color: #ee0181;
     position: absolute;
     top: 20px;
     right: 20px;
     display: block;
     cursor: pointer;
+  }
+  #header {
+    height: auto;
+  }
+  #hero {
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  #hero img {
+    width: 120px;
+    height: 120px;
+  }
+  .right .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right h3,
+  .right h4 {
+    font-size: 1.8rem;
+  }
+  #about {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-img {
+    display: none;
+  }
+  .achievement h1 {
+    font-size: 1.5rem;
+  }
+  .achievement p {
+    font-size: 10px;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+  .project h3 {
+    font-size: 1rem;
+  }
+  #contact {
+    flex-direction: column;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 512px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
   }
 }
